@@ -1,0 +1,53 @@
+<diagram program="umletino" version="15.1"><zoom_level>5</zoom_level><element><id>UMLClass</id><coordinates><x>455</x><y>45</y><w>85</w><h>95</h></coordinates><panel_attributes>*BANK*
+--
++code
++address 
+--
++manages()
++maintains()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>140</y><w>105</w><h>95</h></coordinates><panel_attributes>*ATM*
+--
++location
++managedby
+--
++identifies()
++transactions()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>535</x><y>85</y><w>155</w><h>65</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;290;10;290;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>245</x><y>155</y><w>105</w><h>95</h></coordinates><panel_attributes>*Customer*
+--
++name
++address
++dob
++card number
++pin
+--
++verifyPassword()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>445</x><y>305</y><w>105</w><h>95</h></coordinates><panel_attributes>*Account*
+--
++number
++balance
+--
++deposit()
++withdraw()
+createTransaction()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>790</x><y>295</y><w>105</w><h>95</h></coordinates><panel_attributes>*ATM Transactions*
+--
++transaction id
++date
++type
++amount
++post balance
+--
++modifies()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>265</x><y>480</y><w>85</w><h>95</h></coordinates><panel_attributes>*Current Account*
+--
++account no.
++balance
+--
++withdraw()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>645</x><y>475</y><w>75</w><h>95</h></coordinates><panel_attributes>*Saving Account*
+--
++account no.
++balance
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>345</x><y>175</y><w>295</w><h>45</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>570;10;370;10;370;70;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>485</x><y>135</y><w>25</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;150;30;150;30;340</additional_attributes></element><element><id>Relation</id><coordinates><x>545</x><y>330</y><w>255</w><h>35</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=Account Transaction</panel_attributes><additional_attributes>10;40;370;40;370;10;490;10</additional_attributes></element><element><id>Text</id><coordinates><x>555</x><y>320</y><w>10</w><h>10</h></coordinates><panel_attributes>*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>245</y><w>165</w><h>120</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1.2
+</panel_attributes><additional_attributes>10;10;10;210;310;210</additional_attributes></element><element><id>Text</id><coordinates><x>265</x><y>255</y><w>25</w><h>10</h></coordinates><panel_attributes>Has</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>450</y><w>395</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;60;10;20;770;20;770;50</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>395</y><w>80</w><h>75</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60;140;60;140;130</additional_attributes></element><element><id>Relation</id><coordinates><x>345</x><y>510</y><w>310</w><h>35</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+</panel_attributes><additional_attributes>10;40;290;40;290;20;600;20</additional_attributes></element><element><id>Text</id><coordinates><x>580</x><y>505</y><w>60</w><h>10</h></coordinates><panel_attributes>Savings-Checking</panel_attributes><additional_attributes></additional_attributes></element></diagram>

@@ -1,0 +1,4 @@
+<h1 class="title">Question <?php echo $current_question_number; ?> / <?php echo MAX_QUESTION_NUMBER; ?></h1>
+<h2 class="subtitle">
+    <?php echo $current_question['question']; ?>
+</h2>
